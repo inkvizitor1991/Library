@@ -17,6 +17,14 @@ def generate_books(books):
         title_text = title_tag.text
         name, *autor = title_text.split("::")
         filename = f'{book}. {name}'.rstrip()
+        print(name)
+        try:
+            check_for_redirect(response)
+            for teg in soup.find_all('div', class_="texts"):
+                text_comments = teg.find(class_="black").get_text()
+                print(text_comments)
+        except:
+            pass
         download_txt(url_book, filename)
         download_image(basic_url, soup)
 
