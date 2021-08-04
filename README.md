@@ -9,12 +9,10 @@
 * Комментарии
 
 ### Как установить
-Для запуска вам потребуется:
-1. Свежая версия [Python](https://www.python.org).
-2. Наличие следующих библиотек:
-```
-$ pip install urllib3 requests BeautifulSoup4 lxml
-```
+Для запуска блога у вас должен быть установлен [Python 3](https://www.python.org).
+1. Установите зависимости командой `pip install -r requirements.txt`
+2. Запустите код командой `$ python library.py`
+
 
 ### Аргументы
 
